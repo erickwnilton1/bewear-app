@@ -33,6 +33,9 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# seed ddtabase
+db/seed.ts
+
 # vercel
 .vercel
 
