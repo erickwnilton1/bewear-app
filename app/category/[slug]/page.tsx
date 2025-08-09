@@ -6,11 +6,11 @@ import ProductItem from "@/components/common/product-item";
 import { db } from "@/db";
 import { categoryTable, productTable } from "@/db/schema";
 
-interface CategoryPagePros {
+interface CategoryPageProps {
   params: Promise<{ slug: string }>;
 }
 
-const CategoryPage = async ({ params }: CategoryPagePros) => {
+const CategoryPage = async ({ params }: CategoryPageProps) => {
   const { slug } = await params;
 
   const category = await db.query.categoryTable.findFirst({
