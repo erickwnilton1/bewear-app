@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { formatCentersToBRL } from "@/app/helpers/money";
 import { productTable, productVariantTable } from "@/db/schema";
+import { formatCentersToBRL } from "@/helpers/money";
 import { cn } from "@/lib/utils";
 
 interface ProductItemProps {
